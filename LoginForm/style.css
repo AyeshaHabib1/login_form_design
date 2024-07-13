@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh; /* Changed to vh to take full viewport height */
+  overflow: hidden;
+}
+
+section .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  pointer-events: none;
+  z-index: -1; /* Ensure video stays in the background */
+}
+
+.login {
+  position: relative;
+  padding: 60px;
+  background: rgba(255, 255, 255, 0.25);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  border: 1px solid #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+}
+
+.login h2 {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #d60454;
+  margin-bottom: 10px;
+}
+
+.inputbox {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.inputbox input {
+  position: relative;
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 1.25rem;
+  color: #d60454;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 30px;
+}
+
+.inputbox input::-moz-placeholder {
+  color: #d60454;
+}
+
+.inputbox input::placeholder {
+  color: #d60454;
+}
+
+.inputbox #btn {
+  position: relative;
+  border: none;
+  outline: none;
+  background: #d60454;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.inputbox #btn:hover {
+  background: #6f0e34;
+}
+
+.group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.group a {
+  text-decoration: none;
+  color: #d60454;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.group a:nth-child(2) {
+  text-decoration: underline;
+}/*# sourceMappingURL=style.css.map */
